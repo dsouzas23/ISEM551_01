@@ -1,0 +1,79 @@
+<html>
+
+ <head>
+ 
+ <title> Product Information </title>
+ 
+<style>
+body {
+    background-color:blue;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+</style>
+
+  <script type="text/javascript" language="javascript">
+  
+  function check(){
+    var x;
+
+    x=document.getElementById("Price").value;
+
+    if(x=='')
+     {
+      alert('Please Enter Price');
+     }  
+  }
+  </script> 
+ 
+ </head>
+
+  <body>
+  <div align="center">
+   <H1> Product Information </H1> 
+
+
+  <form method='post'>
+      <Table>
+       <!-- <tr>
+        <td> Product Name: <input type='text' name='ProductName' id='ProductName' /></td>
+       </tr> -->
+	   <tr> 
+	   <td>Product Name:
+	   <select id="ProductName">
+	    <option value="IPAD">IPAD</option>
+        <option value="Laptop">Laptop</option>
+        <option value="IPhone">IPhone</option>
+        <option value="Desktop">Desktop</option>
+	   </select>
+	   </td>
+	   </tr>
+       <tr> 
+        <td>Manufacturer:&nbsp;&nbsp;<input type='text' name='Manufacturer' id='Manufacturer' /></td>
+       </tr>
+       <tr>
+       <td> Unit:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' name='Unit' id='Unit' /></td>
+       </tr>
+
+       <tr>
+       <td>Price:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type='text' name='Price' id='Price' /></td>
+
+       </tr>
+      </Table>
+
+      <br /><br /><br />
+
+   <input type='button' value='Submit' onclick="check()"/>  
+  </form>
+</div>
+</body>
+
+
+</html>
+
+
+
